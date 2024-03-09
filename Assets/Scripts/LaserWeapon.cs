@@ -34,7 +34,7 @@ public class LaserWeapon : MonoBehaviour
 
         Vector3 myPos = transform.position;
         Vector3 targetPos = closest.transform.position;
-        Vector3 step = (targetPos - myPos) / linePositionsAmount;
+        Vector3 step = (targetPos - myPos) / (linePositionsAmount - 1);
 
         lineRenderer.SetPosition(0, myPos);
         for (int i = 1; i < linePositionsAmount; i++)
