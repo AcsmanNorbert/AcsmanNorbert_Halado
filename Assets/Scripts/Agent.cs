@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.AI;
@@ -11,10 +12,19 @@ public class Agent : MonoBehaviour
     [SerializeField] int moneyReward = 10;
     [SerializeField] int damage = 1;
     [SerializeField] Elemental[] immunities;
+    [SerializeField] Vector3 localAimingPoint;
+
+    static List<Agent> agents = new();
+    public static IReadOnlyList<Agent> Agents => agents;
+
+    void OnEnable() => agents.Add(this);
+    void OnDisable() => agents.Remove(this);
 
     float health;
 
     public Action<float> OnHealthCanged;
+
+    public Vector3 AimingPoint => transform.TransformPoint(localAimingPoint);
 
     public float GetHealthRate
     {
@@ -64,4 +74,10 @@ public class Agent : MonoBehaviour
     }
 
     internal bool isImmune(Elemental elemental) => immunities.Contains(elemental);
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(AimingPoint, 0.15f);
+    }
 }

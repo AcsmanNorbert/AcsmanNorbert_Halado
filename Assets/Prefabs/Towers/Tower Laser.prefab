@@ -1,0 +1,154 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4543332622382076894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1619067174786755746}
+    m_Modifications:
+    - target: {fileID: 5227516063315128487, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_Name
+      value: Weapon Laser
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.243
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d9a229b2b3e3a544b79eb914dcefa0f, type: 3}
+--- !u!4 &6092771764573425963 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7746463287841833717, guid: 4d9a229b2b3e3a544b79eb914dcefa0f,
+    type: 3}
+  m_PrefabInstance: {fileID: 4543332622382076894}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6108153369906180855
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.488119
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.5000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.5032396
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1533276126478454009, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2600958753037484337, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      propertyPath: m_Name
+      value: Tower Laser
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4808876989814677077, guid: a1ff42fd336b9b4419d31ea304ab5661,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6092771764573425963}
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a1ff42fd336b9b4419d31ea304ab5661, type: 3}
+--- !u!4 &1619067174786755746 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4808876989814677077, guid: a1ff42fd336b9b4419d31ea304ab5661,
+    type: 3}
+  m_PrefabInstance: {fileID: 6108153369906180855}
+  m_PrefabAsset: {fileID: 0}

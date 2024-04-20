@@ -15,14 +15,14 @@ public class LaserWeapon : Weapon
     }
 
     private void UpdateLaserVisual()
-    {
+    {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
         lineRenderer.enabled = Target != null;
         if (Target == null) return;
 
         lineRenderer.positionCount = linePositionsAmount;
 
         Vector3 myPos = transform.position;
-        Vector3 targetPos = Target.transform.position;
+        Vector3 targetPos = Target.AimingPoint;
         Vector3 step = (targetPos - myPos) / (linePositionsAmount - 1);
 
         lineRenderer.SetPosition(0, myPos);

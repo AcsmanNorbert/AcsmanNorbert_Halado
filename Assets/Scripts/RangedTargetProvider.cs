@@ -1,5 +1,6 @@
 using UnityEngine;
 
+
 public class RangedTargetProvider : TargetProvider
 {
     [SerializeField] float range = 2;
@@ -17,42 +18,39 @@ public class RangedTargetProvider : TargetProvider
         return target;
     }
 
-    bool IsInRange(Agent target)
-    {
-        float distance = Vector3.Distance(transform.position, target.transform.position);
-        return distance <= range;
-    }
-
     Agent FindClosestAgentInRange()
     {
-        Agent[] agents = FindObjectsOfType<Agent>();
-        if (agents.Length == 0) return null;
+        Agent[] allAgents = FindObjectsOfType<Agent>();
 
-        Vector3 myPos = transform.position;
+        Vector3 p = transform.position;
+        float minDistance = float.MaxValue;
+        Agent closest = null;
 
-        Agent closestAgent = null;
-        float closestAgentDistance = float.MaxValue;
-
-        foreach (Agent agent in agents)
+        foreach (Agent agent in allAgents)
         {
-            float currentAgentDistance = Vector3.Distance(myPos, agent.transform.position);
-            if (currentAgentDistance > range) continue;
-            if (currentAgentDistance >= closestAgentDistance) continue;
+            float distance = Vector3.Distance(agent.AimingPoint, p);
+            if (distance > range) continue;
+            if (distance > minDistance) continue;
 
-            closestAgent = agent;
-            closestAgentDistance = currentAgentDistance;
+            minDistance = distance;
+            closest = agent;
         }
-        return closestAgent;
+
+        return closest;
+    }
+
+    bool IsInRange(Agent agent)
+    {
+        Vector3 p = transform.position;
+        float distance = Vector3.Distance(agent.AimingPoint, p);
+        return distance <= range;
     }
 
     void OnDrawGizmosSelected()
     {
-        Vector3 myPos = transform.position;
-        Gizmos.color = Color.magenta;
-        Gizmos.DrawWireSphere(myPos, range);
-
-        if (target == null) return;
         Gizmos.color = Color.red;
-        Gizmos.DrawLine(myPos, target.transform.position);
+        Gizmos.DrawWireSphere(transform.position, range);
+        if (target != null)
+            Gizmos.DrawLine(target.AimingPoint, transform.position);
     }
 }

@@ -7,8 +7,9 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        if (i == null)
-            i = this;
+        if (i != null)
+            Debug.LogError("Több GameManager létezik");
+        i = this;
     }
     #endregion
 

@@ -206,7 +206,7 @@ MonoBehaviour:
   startHealth: 100
   moneyReward: 10
   damage: 1
-  immunities: []
+  immunities: 
 --- !u!33 &4355405931411078946
 MeshFilter:
   m_ObjectHideFlags: 0

@@ -8,6 +8,6 @@ public class LauncherWeapon : PeriodicWeapon
     {
         Projectile projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity, transform);
 
-        projectile.Setup(Target);
+        projectile.Setup(this);
     }
 }
