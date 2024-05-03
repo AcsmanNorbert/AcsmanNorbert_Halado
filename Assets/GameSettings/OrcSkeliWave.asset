@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26ec686e707cbb54dadd20130f365d3a, type: 3}
+  m_Name: OrcSkeliWave
+  m_EditorClassIdentifier: 
+  agents:
+  - prefab: {fileID: 7986032387869426576, guid: e0df1ef5a7cfaf142b8959dfeb0bf90f,
+      type: 3}
+    delay: 1
+  - prefab: {fileID: 8031245077875407899, guid: 300313a2cba45f8458e933f1504ded50,
+      type: 3}
+    delay: 2
+  - prefab: {fileID: 7986032387869426576, guid: e0df1ef5a7cfaf142b8959dfeb0bf90f,
+      type: 3}
+    delay: 1
+  - prefab: {fileID: 8031245077875407899, guid: 300313a2cba45f8458e933f1504ded50,
+      type: 3}
+    delay: 2
+  - prefab: {fileID: 7986032387869426576, guid: e0df1ef5a7cfaf142b8959dfeb0bf90f,
+      type: 3}
+    delay: 1
+  - prefab: {fileID: 8031245077875407899, guid: 300313a2cba45f8458e933f1504ded50,
+      type: 3}
+    delay: 2
